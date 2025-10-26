@@ -106,7 +106,7 @@ const Login = () => {
 
       const res = await axios.post('https://login-1-q21f.onrender.com/login', data)
       localStorage.setItem('token', res.data.token)
-       toast.success(res.data.message || 'Registered successfully', {
+       toast.success(res.data.message || 'Login successfully', {
         position: 'top-right',
       });
             // navigate('/profile')
@@ -170,6 +170,7 @@ const Login = () => {
 };
 
 export default Login;
+
 
 
 
