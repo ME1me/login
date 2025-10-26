@@ -89,7 +89,7 @@ const Login = () => {
       return;
     }
     try {
-      const res = await axios.post('http://localhost:5000/register', signup);
+      const res = await axios.post('https://login-r4l9.onrender.com/register', signup);
       toast.success(res.data.message || 'Registered successfully', {
         position: 'top-right',
       });
@@ -105,7 +105,7 @@ const Login = () => {
     console.log(data);
     try {
 
-      const res = await axios.post('http://localhost:5000/login', data)
+      const res = await axios.post('https://login-r4l9.onrender.com/login', data)
       localStorage.setItem('token', res.data.token)
        toast.success(res.data.message || 'Registered successfully', {
         position: 'top-right',
@@ -171,3 +171,4 @@ const Login = () => {
 };
 
 export default Login;
+
