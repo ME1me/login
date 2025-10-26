@@ -102,7 +102,6 @@ const Login = () => {
   };
   const loginUser = async (e) => {
     e.preventDefault();
-    console.log(data);
     try {
 
       const res = await axios.post('https://login-1-q21f.onrender.com/login', data)
@@ -171,5 +170,6 @@ const Login = () => {
 };
 
 export default Login;
+
 
 
