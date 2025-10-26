@@ -27,7 +27,7 @@ const Profile = () => {
       }
 
       try {
-        const res = await axios.get('http://localhost:5000/profile', {
+        const res = await axios.get('https://login-r4l9.onrender.com/profile', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(res.data.user);
@@ -131,3 +131,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
